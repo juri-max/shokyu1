@@ -16,7 +16,7 @@ li {
     list-style: none;
 }
 
-.wrapper {
+.content {
     width: 1366px;
     margin: 0 auto;
 }
@@ -65,7 +65,25 @@ li {
 #mainvisual .main-text {
     position: absolute;
     text-align: center;
-    right: 480px;
-    top: 250px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: white;
+}
+
+#mainvisual .main-text h1 {
+    margin-bottom: 20px;
+}
+
+#Challenge {
+    margin-bottom: 75px;
+
+}
+
+#Challenge .Profile-list h2{
+    font-size: 18px;
+}
+
+#Challenge .Profile-list img {
+    width: 25%;
 }
