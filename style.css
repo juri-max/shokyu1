@@ -16,8 +16,10 @@ li {
     list-style: none;
 }
 
-
-
+.wrapper {
+    width: 1366px;
+    margin: 0 auto;
+}
 
 /*header*/
 #header {
@@ -46,4 +48,24 @@ li {
 .header-list li {
     padding-right: 15px;
     font-weight: bold;
+}
+
+/*main*/
+#mainvisual {
+    margin-bottom: 70px;
+    position: relative;
+}
+
+#mainvisual img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#mainvisual .main-text {
+    position: absolute;
+    text-align: center;
+    right: 480px;
+    top: 250px;
+    color: white;
 }
