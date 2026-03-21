@@ -90,17 +90,29 @@ li {
 
 #Challenge .Profile-list {
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 #Challenge .Profile-list li {
-    width: 35%;
+    background-color: white;
+    width: 33%;
+    box-shadow: 1px 2px 1px rgba(0,0,0,0.1);
 }
 
 #Challenge .Profile-list h2{
-    font-size: 18px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    padding: 18px;
+    line-height: 20px;
+    min-height: 150px;
 }
 
 #Challenge .Profile-list img {
     width: 100%;
+    margin-bottom: 10px;
+}
+
+
+#Challenge .Profile-list li p {
+    padding: 0 0 20px 20px;
 }
