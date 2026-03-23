@@ -1,4 +1,9 @@
 @charset "UTF-8";
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 html {
     font-size: 100%;
@@ -17,7 +22,8 @@ li {
 }
 
 .content {
-    width: 1366px;
+    max-width: 1366px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -41,8 +47,9 @@ li {
 }
 
 .header-logo img {
+    display: block;
     width: 180px;
-    height: 40px;
+    height: auto;
 }
 
 
@@ -151,8 +158,8 @@ li {
     left: 50%;
 }
 
-#footer .footer-text .footer-title {
-    margin-bottom: 40px;
+#footer .footer-text h1 {
+    margin-bottom: 20px;
 }
 
 #footer .footer-text p {
@@ -177,4 +184,101 @@ li {
     height: 80px;
     text-align: center;
     line-height: 80px;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width: 767px) {
+    #header-inner {
+        width: 100%;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .header-logo img {
+        width: 80px;
+        height: auto;
+    }
+
+    .header-list li {
+        padding-right: 5px;
+        font-size: 8px;
+    }
+    
+    #mainvisual {
+        margin-bottom: 30px;
+    }
+
+    #mainvisual .main-text h1 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    #mainvisual .main-text p {
+        font-size: 10px;
+    }
+
+    #Challenge {
+        width:  100%;
+        padding: 0 15px;
+    }
+
+    #Challenge .section-title {
+        font-size: 18px;
+    }
+
+    #Challenge .Profile-list {
+        flex-direction: column;
+    }
+
+    #Challenge .Profile-list li {
+        width: 80%;
+        height: auto;
+        margin: 0 auto 5px;
+    }
+
+    #Challenge .Profile-list h2 {
+        font-size: 14px;
+        padding: 10px;
+        min-height: 70px;
+    }
+
+    #Challenge .Profile-list p {
+        font-size: 12px;
+    }
+
+    #Challenge .btn {
+        width: 80%;
+        font-size: 10px;
+    }
+
+    /*footer*/
+    #footer .footer-text {
+        position: static;   /* ←これが最重要 */
+        transform: none;
+        top: auto;
+        left: auto;
+        padding: 30px 15px;
+        text-align: center;
+        color: #333333;
+    }
+
+    .footer-text h1 {
+        font-size: 10px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .footer-text p {
+        font-size: 8px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .footer-btn {
+        font-size: 10px;
+        width: 50%;
+    }
+
+    .copyright p {
+        font-size: 10px;
+    }
 }
